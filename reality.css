@@ -1,0 +1,55 @@
+body {
+    background:linear-gradient(#f2b5de,#8fa6ad,#8fb2d6,#7ed3db, #81c3f8,rgb(178, 238, 187)); 
+    padding: 30px 30px 300px;
+    max-width: 1500px;
+    margin:  0px auto;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 0px;
+    position: relative;
+}
+
+p.main {
+    text-align:center;
+    font-size: 120px;
+   
+  background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+}
+
+p.tmp{
+    text-align:center;
+    font-size: 35px;
+    font-family: monospace;
+    font-style: italic;
+    background: linear-gradient(transparent 0%,#5ce8d5);
+}
+
+img.zrs1{
+    width: 430px;
+    height: 780px;
+  }
+
+  5
+/* もくじ */
+.page-contents{
+list-style:none; /* 冒頭の数字が不要なので消す */
+padding-left:5px; /* 左側の余白を5pxに調整 */
+}
+
+a.z1 {
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(to right, #d6ea51,#b0e856,#77e0d2,#7347cb,#cd4c4c);
+  display: block;
+  padding: 15px 25px;
+  border-radius: 500px;
+  box-shadow: 0 4px 0 0 #6765f0;
+  font-weight: bold;
+  width: 300px;
+  text-align: center;
+  margin: 110px auto 0;
+  letter-spacing: 2px;
+}
+
