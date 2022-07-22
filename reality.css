@@ -1,19 +1,145 @@
+/* ヘッダー */
+header {
+  width: 100%;
+  padding: 30px 4% 10px;
+  background-color: #63cadc;
+  position: fixed;
+ top: 0;
+ display: flex;
+ align-items: center;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #3584bb;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+.menu-btn span:before {
+  bottom: 8px;
+}
+.menu-btn span:after {
+  top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+  display: none;
+}
+
+.menu-content {
+  width: 100px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  background-color: #3584bb;
+}
+.menu-content ul {
+  padding: 70px 10px 0;
+}
+.menu-content ul li {
+  border-bottom: solid 1px #ffffff;
+  list-style: none;
+}
+.menu-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color:#ffffff;
+  text-decoration: none;
+  padding: 9px 15px 20px 0;
+  position: relative;
+}
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}
+
+.menu-content {
+  width: 100%;
+  height: 50%;
+  position: fixed;
+  top: 0;
+  left: 100%;/*leftの値を変更してメニューを画面外へ*/
+  z-index: 80;
+  background-color: #3584bb;
+  transition: all 0.5s;/*アニメーション設定*/
+}
+
+#menu-btn-check:checked ~ .menu-content {
+  left: 0;/*メニューを画面内へ*/
+}
+/* ヘッダーend */
+
 body {
   margin:0;
 }
 
-.bg {
-  animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #63cadc 50%, #ffffff 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
+h1 {
+  text-align:center;
+    font-size: 60px;
+    font-family: 'Roboto',arial,sans-serif;
+    background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-  
+a {	
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 0 0 15px;
+  font-size: 25px;
+}
+
+nav {
+  margin: 0 0 0 auto;
 }
 
 .bg2 {
@@ -37,7 +163,7 @@ body {
 p.main {
     text-align:center;
     font-size: 120px;
-
+    margin: 180px;
     font-family: 'Roboto',arial,sans-serif;
    
   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
@@ -66,12 +192,6 @@ p.timeup{
 img.zrs1{
     width: 500px;
     height: 880px;
-    
-    
-    @media screen and (max-width: 500px) {
-      
-      width: 100% ;      
-      }
   }
 
 ul.zrs1{
@@ -110,7 +230,6 @@ input {
   line-height: 1.5;
   position: relative;
   display: inline-block;
-  
   cursor: pointer;
   transition: all 0.3s;
   text-align: center;
@@ -119,7 +238,6 @@ input {
   letter-spacing: 0.1em;
   color: #ff0000;
   border-radius: 0.5rem;
-
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -144,43 +262,3 @@ input {
   font-size: 40px;
 }
 
-/* 目次デザイン→→→ */
-#tocopen:checked+.toc_container {
-  display: block;
-  padding: 45px;
-  border: 4px solid tan;
-}
-
-/*****
-チェックボックスと開閉する目次ボックスは非表示
-****/
-
-.toc_container,.l_toc input[type="checkbox"]{
-  display: none;
-}
-
-.l_toc {
-  width: 95%;
-  max-width: 500px;
-  margin: 0px;
-  position: relative;
-  top: 38px;
-  left: 0;
-}
-
-.l_toc label {
-  background-color: #e66db8;
-  padding: 10px;
-  position: absolute;
-  top: -40px;
-  left: 0;
-}
-
-.toc_container {
-  background-color: #fff;
-  width: 100%;
-}
-.toc_container ol>li {
-  margin: 10px 0px;
-}
-/* 目次デザインここまで */
