@@ -2,11 +2,12 @@
 header {
   width: 100%;
   padding: 30px 4% 10px;
-  background-color: #63cadc;
+  background-color: #020024;
   position: fixed;
  top: 0;
  display: flex;
  align-items: center;
+ opacity: 0.8;
 }
 
 .menu-btn {
@@ -111,6 +112,7 @@ header {
 
 body {
   margin:0;
+  background-color: #000000;;
 }
 
 h1 {
@@ -174,10 +176,11 @@ p.main {
 
 p.tmp{
     text-align:center;
-    font-size: 35px;
+    font-size: 40px;
     font-family: monospace;
     font-style: italic;
-    background: linear-gradient(transparent 0%,#5ce8d5);
+  background-color: #000000;
+  color: #ffffff;
 }
 
 p.Favorite{
@@ -220,7 +223,7 @@ a.twitter-timeline {
 .tstyle{
   font-size: 30px;
   font-family: 'Noto Sans JP', sans-serif;
-  background-color: #6DBDE6;
+  background-color: #000000;
   color: #ffffff;
 }
 
@@ -248,17 +251,36 @@ input {
   -webkit-transition: all 0.3s;
 }
 
-.mc{
-  font-size: 30px;
-  color: #00a2ff;
-}
 
-.mcr{
-  font-size: 30px;
-  color: #ff0000;
-}
 
-.mcc{
-  font-size: 40px;
+table{
+  border-collapse: collapse;
+  width: 100%;
 }
-
+.tb01 th,
+.tb01 td{
+  padding: 10px;
+  border: solid 1px #ccc;
+  text-align:center;
+  box-sizing:border-box;
+  color: #ffffff;
+}
+.tb01 th {
+  background: #ffffff;
+  color: #000000;
+  
+}
+@media screen and (max-width: 640px) {
+  .tb01 {
+    width: 100%;
+  }
+  table.tb01 th,
+  table.tb01 td {
+    display: block;
+    width: 100%;
+    border-bottom:none;
+  }
+  .tb01 tr:last-child{
+    border-bottom: solid 1px #ccc;
+  }
+}
