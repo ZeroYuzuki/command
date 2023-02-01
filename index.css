@@ -84,7 +84,7 @@ body {
    margin: 0;
    padding: 0;
    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-   background-color: #f3ede5;
+   background-color: #060017;
    letter-spacing : 0.2em;
 }
 
@@ -139,8 +139,9 @@ body {
 }
 
 p.midashi {
-   border-bottom: solid 3px black;
+   border-bottom: solid 3px #ffffff;
    font-size: 30px;
+   color: #ffffff;
 }
 
 .textbox{
@@ -178,4 +179,86 @@ p.midashi {
    display: block;
   margin: auto;
  }
+}
+
+.sample_url_copy_container {
+   display: flex;
+   column-gap: 20px;
+   align-items: center;
+}
+.sample_copy_bt {
+   padding: 5px 10px;
+   position: relative;
+}
+
+p.sample_hp_url{
+   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+p.sample_hp_url2{
+   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+p.sample_hp_url3{
+   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+p.sample_hp_url4{
+   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+p.sample_hp_url5{
+   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+p.sample_hp_url6{
+   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+p.sample_hp_url7{
+   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+p.sample_hp_url8{
+   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+p.sample_hp_url9{
+   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+p.sample_hp_url10{
+   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+p.sample_hp_url11{
+   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+p.sample_hp_url12{
+   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
 }
